@@ -123,3 +123,15 @@
 .progress-bar:indeterminate .bar {
     -fx-background-color: linear-gradient(to right, rgba(99, 102, 241, 0.85), rgba(14, 165, 233, 0.85));
 }
+
+.welcome-root {
+    -fx-background-color: linear-gradient(to bottom right, #0f172a, #1e293b);
+    -fx-background-radius: 18;
+    -fx-spacing: 24;
+}
+
+.welcome-title {
+    -fx-text-fill: #f8fafc;
+    -fx-font-size: 24px;
+    -fx-font-weight: 700;
+}
