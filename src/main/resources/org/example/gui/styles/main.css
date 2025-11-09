@@ -1,0 +1,125 @@
+.app-root {
+    -fx-background-color: linear-gradient(to bottom, #101828 0%, #0b1120 100%);
+    -fx-font-family: "Segoe UI", "Roboto", "Sans-Serif";
+    -fx-text-fill: #e2e8f0;
+}
+
+.header {
+    -fx-padding: 24 12 12 12;
+}
+
+.header-title {
+    -fx-text-fill: #f8fafc;
+    -fx-font-size: 28px;
+    -fx-font-weight: 700;
+    -fx-effect: dropshadow(gaussian, rgba(15, 23, 42, 0.35), 18, 0.2, 0, 6);
+}
+
+.header-subtitle {
+    -fx-text-fill: #cbd5f5;
+    -fx-font-size: 15px;
+}
+
+.camera-frame {
+    -fx-padding: 32;
+    -fx-background-color: rgba(15, 23, 42, 0.65);
+    -fx-background-radius: 24;
+    -fx-border-color: rgba(99, 102, 241, 0.45);
+    -fx-border-radius: 24;
+    -fx-border-width: 2;
+    -fx-effect: dropshadow(gaussian, rgba(17, 24, 39, 0.55), 30, 0.3, 0, 18);
+    -fx-max-width: 760;
+    -fx-max-height: 560;
+    -fx-alignment: center;
+}
+
+.camera-frame ImageView {
+    -fx-effect: dropshadow(gaussian, rgba(15, 23, 42, 0.65), 40, 0.35, 0, 20);
+}
+
+.control-panel {
+    -fx-background-color: rgba(15, 23, 42, 0.75);
+    -fx-background-radius: 22;
+    -fx-border-radius: 22;
+    -fx-border-color: rgba(148, 163, 184, 0.25);
+    -fx-border-width: 1.2;
+    -fx-spacing: 16;
+}
+
+.input-label {
+    -fx-text-fill: #dbeafe;
+    -fx-font-size: 15px;
+    -fx-font-weight: 600;
+}
+
+.text-field {
+    -fx-background-color: rgba(15, 23, 42, 0.95);
+    -fx-border-radius: 12;
+    -fx-background-radius: 12;
+    -fx-text-fill: #e2e8f0;
+    -fx-prompt-text-fill: rgba(203, 213, 225, 0.7);
+    -fx-border-color: rgba(99, 102, 241, 0.35);
+    -fx-border-width: 1.2;
+    -fx-padding: 10 14 10 14;
+}
+
+.text-field:focused {
+    -fx-border-color: #6366f1;
+    -fx-effect: dropshadow(gaussian, rgba(99, 102, 241, 0.35), 20, 0.3, 0, 6);
+}
+
+.button {
+    -fx-font-size: 14px;
+    -fx-font-weight: 600;
+    -fx-padding: 12 24 12 24;
+    -fx-background-radius: 14;
+    -fx-border-radius: 14;
+    -fx-cursor: hand;
+    -fx-text-fill: #f8fafc;
+    -fx-border-width: 0;
+}
+
+.primary-button {
+    -fx-background-color: linear-gradient(to right, #6366f1, #4f46e5);
+}
+
+.primary-button:hover {
+    -fx-background-color: linear-gradient(to right, #4f46e5, #4338ca);
+}
+
+.secondary-button {
+    -fx-background-color: linear-gradient(to right, #22d3ee, #0ea5e9);
+}
+
+.secondary-button:hover {
+    -fx-background-color: linear-gradient(to right, #0ea5e9, #0284c7);
+}
+
+.danger-button {
+    -fx-background-color: linear-gradient(to right, #f97316, #ef4444);
+}
+
+.danger-button:hover {
+    -fx-background-color: linear-gradient(to right, #ef4444, #dc2626);
+}
+
+.status-label {
+    -fx-text-fill: #f8fafc;
+    -fx-font-size: 14px;
+}
+
+.progress-bar {
+    -fx-accent: linear-gradient(to right, #6366f1, #0ea5e9);
+    -fx-background-color: rgba(15, 23, 42, 0.9);
+    -fx-background-radius: 10;
+    -fx-padding: 4;
+}
+
+.progress-bar .bar {
+    -fx-background-insets: 0;
+    -fx-background-radius: 8;
+}
+
+.progress-bar:indeterminate .bar {
+    -fx-background-color: linear-gradient(to right, rgba(99, 102, 241, 0.85), rgba(14, 165, 233, 0.85));
+}
